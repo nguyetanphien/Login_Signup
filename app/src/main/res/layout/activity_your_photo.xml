@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D9D9D9"
+    tools:context="com.uits.music_android.pages.photo.YourPhoto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Take your photo"
+
+            android:textSize="14dp"
+            android:textColor="#363636"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="417dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="10dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/custom_button_camera"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttonletme"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:text="Verify" />
+
+</LinearLayout>
